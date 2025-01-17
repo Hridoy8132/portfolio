@@ -210,6 +210,10 @@ nav ul li a:hover::after{
     display: block;
 }
 
+#skills, #experiance, #education{
+    line-height: 20px;
+    
+}
 /* services section */
 #services{
     padding: 30px 0;
