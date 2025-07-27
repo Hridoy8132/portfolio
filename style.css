@@ -685,8 +685,82 @@ body {
     font-size: 1rem;
   }
 
+@media only screen and (min-width: 1600px) {
 
+  /* --- Web Projects Section Fix --- */
+  .work-list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+  }
+
+  .work {
+    width: 100%;
+    height: 450px;
+    background-size: cover !important;
+    margin: auto;
+  }
+
+  .layer {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .layer .text-icon {
+    align-self: flex-end;
+  }
+
+  /* --- Python Projects Section Fix --- */
+  .python {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .python video {
+    width: 45%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  /* --- Mobile App Project Section Fix --- */
+  .mobile-apps-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 50px;
+  }
+
+  .mobile-apps-section .app {
+    width: 22%;
+    position: relative;
+  }
+
+  .mobile-apps-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mobile-apps-section .app-description {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .mobile-apps-section .github-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}
 /* Extra large devices (large desktops, 1200px and up) */
+/* 
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1140px;
@@ -704,60 +778,11 @@ body {
   .footer {
     text-align: right;
   }
-}
-/* Another responsive for large devices */
 
-/* Large desktop screens */
-@media only screen and (min-width: 1920px) {
-  
-  /* Web Projects section */
-  #web-projects .project-image {
-    width: 280px; /* ইমেজ গুলো একটু বড় করলাম */
-    margin: 0 10px; /* ডান-বামে গ্যাপ কমালাম */
-    object-fit: cover; /* ছবির ফিট ঠিক রাখতে */
-  }
-  #web-projects .projects-container {
-    gap: 15px; /* ইমেজগুলোর মাঝে গ্যাপ কমালাম */
-    justify-content: flex-start; /* left aligned বা ডিফল্ট রাখা যাবে */
-  }
-
-  /* Python Projects section */
-  #python-projects .video-item {
-    width: 400px; /* ভিডিওগুলো একটু বড় */
-    margin: 10px auto; /* সেন্টারে রাখতে auto left-right margin */
-    display: block; /* ব্লক লেভেলে করলাম যাতে সেন্টারে আসে */
-  }
-  #python-projects .videos-wrapper {
-    display: flex;
-    justify-content: center; /* পুরো সেকশন সেন্টারে */
-    gap: 25px; /* ভিডিওগুলোর মাঝে গ্যাপ */
-    flex-wrap: wrap; /* রেসপন্সিভ রাখতে */
-  }
-
-  /* Mobile Application Projects section */
-  #mobile-projects .project-image {
-    width: 150px; /* ইমেজগুলো একটু ছোট কিন্তু যথেষ্ট বড় */
-    margin: 0 8px; /* গ্যাপ কমানো */
-    object-fit: contain;
-  }
-  #mobile-projects .project-text {
-    margin-top: 8px; /* টেক্সট উপরে উঠানো */
-    line-height: 1.3;
-  }
-  #mobile-projects .github-icon {
-    position: absolute; /* ইমেজের নিচে ডানদিকে রাখার জন্য */
-    bottom: 8px;
-    right: 8px;
-    width: 24px;
-    height: 24px;
-  }
-  #mobile-projects .project-item {
-    position: relative; /* github icon এর জন্য relative container */
-    display: inline-block;
-  }
 
 }
 
 
 
 
+ */
