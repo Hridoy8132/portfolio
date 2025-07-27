@@ -712,8 +712,71 @@ body {
     align-self: flex-end;
   }
 
+
+  /* Python Projects Section Fix */
+  .python-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+  }
+
+  .python-projects .project {
+    flex: 0 0 45%;
+    max-width: 45%;
+    text-align: center;
+  }
+
+  .python-projects iframe {
+    width: 100%;
+    height: 315px;
+    max-width: 640px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Mobile Application Projects Fix */
+  .mobile-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 0;
+  }
+
+  .mobile-projects .project {
+    width: 300px;
+    position: relative;
+  }
+
+  .mobile-projects img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .mobile-projects .project-text {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .mobile-projects .github-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile-projects .github-link img {
+    width: 100%;
+    height: auto;
+  }
+}
+
   /* --- Python Projects Section Fix --- */
-  .python {
+  /* .python {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -725,10 +788,10 @@ body {
     width: 45%;
     max-height: 400px;
     object-fit: cover;
-  }
+  } */
 
   /* --- Mobile App Project Section Fix --- */
-  .mobile-apps-section {
+  /* .mobile-apps-section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -758,7 +821,7 @@ body {
     bottom: 10px;
     right: 10px;
   }
-}
+} */
 /* Extra large devices (large desktops, 1200px and up) */
 /* 
 @media only screen and (min-width: 1200px) {
