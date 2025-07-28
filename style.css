@@ -797,9 +797,9 @@ body {
 }
 
 /* GitHub icon visibility fix */
-.github-icon {
+/* .github-icon {
   display: block;
-}
+} */
   /* Mobile Application Projects Fix */
   /* .mobile-projects {
     display: flex;
