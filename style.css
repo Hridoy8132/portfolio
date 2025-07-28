@@ -714,7 +714,7 @@ body {
 
 
   /* Python Projects Section Fix */
-  .python-projects {
+  /* .python-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -736,8 +736,72 @@ body {
     display: block;
   }
 
+
+  /* Python Projects section fix */
+  #python-projects .work-list {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 40px;
+  
+  }
+
+  #python-projects .work img, 
+  #python-projects .work iframe {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #python-projects .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Mobile Applications section fix */
+  #mobile-projects .work-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  #mobile-projects .work img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #mobile-projects .work {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #mobile-projects .github-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Universal work-list improvements for consistent spacing */
+.work-list {
+  display: grid;
+  gap: 30px;
+}
+
+/* GitHub icon visibility fix */
+.github-icon {
+  display: block;
+}
   /* Mobile Application Projects Fix */
-  .mobile-projects {
+  /* .mobile-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -773,7 +837,7 @@ body {
     width: 100%;
     height: auto;
   }
-}
+}  */
 
   /* --- Python Projects Section Fix --- */
   /* .python {
